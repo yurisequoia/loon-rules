@@ -1,6 +1,8 @@
 name: rule-update
 
 on:
+  push:
+    branches: ["master"]
   workflow_dispatch:
   schedule:
     - cron: "30 7 * * *"
@@ -17,12 +19,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Load build variables
-        id: vars
-        run: |
-          echo "DATE=$(TZ=Asia/Shanghai date +'%Y%m%d')" >> $GITHUB_ENV
-          echo "TIME=$(TZ=Asia/Shanghai date +'%H%M')" >> $GITHUB_ENV
-
       - name: Make rule
         run: |
           mkdir -p {geosite,geoip}
@@ -36,6 +32,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update rules [${{ env.DATE }}${{ env.TIME }}]"
+            git commit -m "Update rules [$(TZ=Asia/Shanghai date +'%Y%m%d')TIME=$(TZ=Asia/Shanghai date +'%H%M')]"
             git push
           fi
