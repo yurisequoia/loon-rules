@@ -1,0 +1,34 @@
+name: rule-update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 7 * * *"
+      timezone: "Asia/Shanghai"
+
+jobs:
+  build:
+    runs-on: ubuntu-slim
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Make rule
+        run: |
+          mkdir -p {geosite,geoip}
+          make public && tree
+
+      - name: Commit and Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update rules [skip ci]"
+            git push
+          fi
