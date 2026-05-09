@@ -15,4 +15,4 @@ IP-CIDR,224.0.0.0/3
 IP-CIDR6,::/127
 IP-CIDR6,fc00::/7
 IP-CIDR6,fe80::/10
-IP-CIDR6,ff00::/8
+IP-CIDR6,ff00::/8,no-resolve
