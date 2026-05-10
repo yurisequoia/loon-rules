@@ -13,4 +13,4 @@ public: raw
 	find geosite geoip -type f -name "*.loon.list" -exec sed -i 's/^\+//' {} +
 	find geoip -type f -name "*.loon.list" -exec sed -i '/:/s/^/IP-CIDR6,/; /:/!s/^/IP-CIDR,/' {} +
 	find geoip -type f -name "*.loon.list" -exec sed -i 's/$$/,no-resolve/' {} +
-	find geosite geoip -type f -name "*.loon.list" -exec sh -c 'sort -o "$$1" "$$1"' _ {} \;
+	find geosite geoip -type f -name "*.loon.list" -exec sh -c 'sort -o "$$0" "$$0"' {} \;
