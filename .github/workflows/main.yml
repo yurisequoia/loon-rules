@@ -21,7 +21,7 @@ jobs:
 
       - name: Make rule
         run: |
-          mkdir -p {geosite,geoip}
+          mkdir -p {domain,ip}
           make public && tree
 
       - name: Commit and Push changes
