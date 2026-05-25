@@ -18,7 +18,7 @@ public: raw
 # IP
 	find ip -type f -name "*.raw.txt" -exec sh -c 'mv "$$0" "$${0%.raw.txt}.raw.list"' {} \;
 	find ip -type f -name "*.raw.list" -exec sed -i '/:/s/^/IP-CIDR6,/; /:/!s/^/IP-CIDR,/' {} +
-	find ip -type f -name "*.raw.list" -exec sed -i 's/$$/,no-resolve/' {} +
+#	find ip -type f -name "*.raw.list" -exec sed -i 's/$$/,no-resolve/' {} +
 
 # FINAL
 	find domain ip -type f -name "*.raw.list" -exec sh -c 'mv "$$0" "$${0%.raw.list}.list"' {} \;
