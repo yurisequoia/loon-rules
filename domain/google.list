@@ -4,7 +4,6 @@
 .2mdn-cn.net
 .2mdn.net
 .466453.com
-.abc.xyz
 .adgoogle.net
 .admeld.com
 .admob-cn.com
@@ -499,7 +498,6 @@
 .gstaticcnapps.cn
 .gsuite.com
 .guge
-.gv.com
 .gvt0.com
 .gvt1-cn.com
 .gvt1.com
@@ -610,6 +608,7 @@
 .stxmosquitoproject.net
 .stxmosquitoproject.org
 .synergyse.com
+.tenor.com
 .tensorflow.org
 .tfhub.dev
 .thecleversense.com
@@ -628,13 +627,11 @@
 .v8.dev
 .v8project.org
 .velostrata.com
-.verily.com
 .verilylifesciences.com
 .verilystudyhub.com
 .verilystudywatch.com
 .verilystudywatch.org
 .wallet.com
-.waymo.com
 .waze.com
 .web.app
 .web.dev
@@ -840,10 +837,7 @@
 admob-cn.com
 adservice.google.com
 ai.google.dev
-ai.google.dev
 alkalicore-pa.clients6.google.com
-alkalicore-pa.clients6.google.com
-alkalimakersuite-pa.clients6.google.com
 alkalimakersuite-pa.clients6.google.com
 alt1-mtalk.google.com
 alt2-mtalk.google.com
@@ -856,8 +850,6 @@ alt8-mtalk.google.com
 analytics.google.com
 android.googlesource.com
 antigravity-pa.googleapis.com
-antigravity-pa.googleapis.com
-antigravity.googleapis.com
 antigravity.googleapis.com
 app-analytics-services.com
 app-measurement-cn.com
@@ -880,8 +872,6 @@ clickserver.googleads.com
 clients1.google.com
 clientservices.googleapis.com
 cloudaicompanion.googleapis.com
-cloudaicompanion.googleapis.com
-cloudcode-pa.googleapis.com
 cloudcode-pa.googleapis.com
 cn.widevine.com
 connectivitycheck.gstatic.com
@@ -889,7 +879,6 @@ crashlyticsreports-pa.googleapis.com
 crl.pki.goog
 crls.pki.goog
 csi.gstatic.com
-daily-cloudcode-pa.googleapis.com
 daily-cloudcode-pa.googleapis.com
 dartsearch-cn.net
 dg-meta.video.google.com
@@ -951,8 +940,6 @@ mtalk-staging.google.com
 mtalk.google.com
 mtalk4.google.com
 notebooklm-pa.googleapis.com
-notebooklm-pa.googleapis.com
-notebooklm.googleapis.com
 notebooklm.googleapis.com
 o.pki.goog
 ocsp.pki.goog
@@ -1069,7 +1056,6 @@ tools.google.com
 update.crashlytics.com
 update.googleapis.com
 wear.googleapis.com
-webchannel-alkalimakersuite-pa.clients6.google.com
 webchannel-alkalimakersuite-pa.clients6.google.com
 www-google-analytics.l.google.com
 www-googletagmanager.l.google.com
